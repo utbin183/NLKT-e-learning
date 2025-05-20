@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEPAGE</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/coursepage.css') }}">
+</head>
+<body>
+    <header>
+        <p>NLKT e-learning</p>
+        <ul>
+            <li><a href="{{ url_for('homepage') }}">Home</a></li>
+            <li><a href="{{ url_for('coursepage')}}">Courses</a></li>
+            <li><a href="{{ url_for('dashboardpage')}}">Dashboard</a></li>
+            <li><a href="{{ url_for('loginpage')}}" >Login</a></li>
+        </ul>
+         <a href="{{ url_for('mybasketpage')}}">🛒</a>
+    </header>
+    <main>
+        <section aria-label="TOP KHÓA HỌC BÁN CHẠY" >
+            <p><strong>TOP KHÓA HỌC BÁN CHẠY</strong></p>
+            <ul class="course-grid">
+            <!-- Công nghệ thông tin -->
+            <li>
+            <a href="/course/python-co-ban">
+                <article>
+                    <h3>Lập trình Python cơ bản</h3>
+                    <p>Giảng viên: K team</p>
+                    <p>4.3/5 sao</p>
+                    <p>200.000 VNĐ <s>300.000 VNĐ</s></p>
+                    <button type="register_immediately">Mua ngay</button>
+                </article>
+            </a>
+            </li>
+            <li>
+            <a href="course/csharp-co-ban">
+            <article>
+                <h3>Lập trình C# cơ bản</h3>
+                <p>Giảng viên: Milk</p>
+                <p>4.5/5 sao</p>
+                <p>300.000 VNĐ <s>450.000 VNĐ</s></p>
+                <button type="register_immediately">Mua ngay</button>
+            </article>
+            </a>
+            </li>
+            <!-- Dữ liệu-->
+            <li>
+            <a href="course/hoc-excel-co-ban">
+            <article>
+                <h3>Học Excel cơ bản </h3>
+                <p>Giảng viên: Đỗ Bảo Nam</p>
+                <p>4.7/5 sao</p>
+                <p>150.000 VNĐ <s>250.000 VNĐ</s></p>
+                <button type="register_immediately">Mua ngay</button>
+            </article>
+            </a>
+            </li>
+            <li>
+            <article>
+                <h3>SQL cơ bản đến nâng cao</h3>
+                <p>Giảng viên: Milk</p>
+                <p>4.5/5 sao</p>
+                <p>300.000 VNĐ <s>600.000 VNĐ</s></p>
+                <button type="register_immediately">Mua ngay</button>
+            </article>
+            </li>
+            <!-- Bán hàng online -->
+            <li>
+            <article>
+                <h3>Kỹ năng bán hàng online hiệu quả</h3>
+                <p>Giảng viên: Milk</p>
+                <p>4.6/5 sao</p>
+                <p>220.000 VNĐ <s>440.000 VNĐ</s></p>
+                <button type="register_immediately">Mua ngay</button>
+            </article>
+            </li>
+            <li>
+            <article>
+                <h3>Marketing đa kênh cho bán lẻ</h3>
+                <p>Giảng viên: Milk</p>
+                <p>4.9/5 sao</p>
+                <p>320.000 VNĐ <s>700.000 VNĐ</s></p>
+                <button type="register_immediately">Mua ngay</button>
+            </article>
+            </li>
+            <!-- Handmade -->
+             <li>
+             <article>
+                <h3>Làm đồ trang trí handmade đơn giản</h3>
+                <p>Giảng viên: Milk</p>
+                <p>4.1/5 sao</p>
+                <p>180.000 VNĐ <s>350.000 VNĐ</s></p>
+                <button type="register_immediately">Mua ngay</button>
+             </article>
+             </li>
+             <li>
+             <article>
+                <h3>Khóa học làm nến thơm handmade</h3>
+                <p>Giảng viên: Milk</p>
+                <p>4.3/5 sao</p>
+                <p>210.000 VNĐ <s>400.000 VNĐ</s></p>
+                <button type="register_immediately">Mua ngay</button>
+             </article>
+             </li>
+             <!-- Autocad -->
+            <li>
+             <article>
+                <h3>Thiết kế kỹ thuật với AutoCAD</h3>
+                <p>Giảng viên: Milk</p>
+                <p>4.4/5 sao</p>
+                <p>299.000 VNĐ <s>500.000 VNĐ</s></p>
+                <button type="register_immediately">Mua ngay</button>
+             </article>
+             </li>
+             <li>
+             <article>
+                 <h3>AutoCAD cho người mới bắt đầu</h3>
+                <p>Giảng viên: Milk</p>
+                <p>4.9/5 sao</p>
+                <p>280.000 VNĐ <s>500.000 VNĐ</s></p>
+                <button type="register_immediately">Mua ngay</button>
+             </article>
+             </li>
+             <!-- Phát triển kỹ năng -->
+              <li>
+             <article>
+                 <h3>Thuyết trình tự tin trong 7 ngày</h3>
+                <p>Giảng viên: Milk</p>
+                <p>4.6/5 sao</p>
+                <p>200.000 VNĐ <s>350.000 VNĐ</s></p>
+                <button type="register_immediately">Mua ngay</button>
+             </article>
+             </li>
+             <li>
+             <article>
+                 <h3>Kỹ năng quản lý thời gian hiệu quả</h3>
+                <p>Giảng viên: Milk</p>
+                <p>4.8/5 sao</p>
+                <p>300.000 VNĐ <s>400.000 VNĐ</s></p>
+                <button type="register_immediately">Mua ngay</button>
+             </article>
+             </li>
+             <!-- Nấu ăn -->
+            <li>
+             <article>
+                 <h3>Nấu ăn gia đình đơn giản và ngon</h3>
+                <p>Giảng viên: Milk</p>
+                <p>4.5/5 sao</p>
+                <p>170.000 VNĐ <s>300.000 VNĐ</s></p>
+                <button type="register_immediately">Mua ngay</button>
+             </article>
+            </li>
+            <li>
+             <article>
+                 <h3>Bí quyết nấu ăn như đầu bếp 5 sao</h3>
+                <p>Giảng viên: Milk</p>
+                <p>5/5 sao</p>
+                <p>220.000 VNĐ <s>500.000 VNĐ</s></p>
+                <button type="register_immediately">Mua ngay</button>
+             </article>
+             </li>
+
+             <!-- Tin học văn phòng -->
+              <li>
+             <article>
+                 <h3>Thành thạo Word, Excel, PowerPoint</h3>
+                <p>Giảng viên: Milk</p>
+                <p>4.8/5 sao</p>
+                <p>320.000 VNĐ <s>700.000 VNĐ</s></p>
+                <button type="register_immediately">Mua ngay</button>
+             </article>
+             </li>
+             <li>
+             <article>
+                 <h3>Tin học văn phòng cho người mới</h3>
+                <p>Giảng viên: Milk</p>
+                <p>4.3/5 sao</p>
+                <p>320.000 VNĐ <s>700.000 VNĐ</s></p>
+                <button type="register_immediately">Mua ngay</button>
+             </article>
+             </li>
+             <!-- Thể dục -->
+             <li>
+             <article>
+                 <h3>Yoga cơ bản tại nhà</h3>
+                <p>Giảng viên: Milk</p>
+                <p>4.7/5 sao</p>
+                <p>150.000 VNĐ <s>300.000 VNĐ</s></p>
+                <button type="register_immediately">Mua ngay</button>
+             </article>
+             </li>
+             <li>
+             <article>
+                 <h3>Cardio giảm cân hiệu quả</h3>
+                <p>Giảng viên: Milk</p>
+                <p>4.4/5 sao</p>
+                <p>190.000 VNĐ <s>350.000 VNĐ</s></p>
+                <button type="register_immediately">Mua ngay</button>
+             </article>
+             </li>
+             <!-- Nhạc cụ -->
+              <li>
+             <article>
+                 <h3>Học đàn guitar cho người mới</h3>
+                <p>Giảng viên: Milk</p>
+                <p>4.4/5 sao</p>
+                <p>300.000 VNĐ <s>550.000 VNĐ</s></p>
+                <button type="register_immediately">Mua ngay</button>
+             </article>
+             </li>
+             <li>
+             <article>
+                 <h3>Đàn Piano cơ bản cho người lớn</h3>
+                <p>Giảng viên: Milk</p>
+                <p>4.2/5 sao</p>
+                <p>350.000 VNĐ <s>600.000 VNĐ</s></p>
+                <button type="register_immediately">Mua ngay</button>
+             </article>
+             </li>
+             </ul>
+        </section>
+
+        <section aria-label="SÁCH HAY NÊN ĐỌC">
+            <p><strong>SÁCH HAY NÊN ĐỌC</strong></p>
+            <!-- Công nghệ thông tin -->
+            <ul class="book-grid">
+            <li>
+            <article>
+                <h3>Machine learning Cơ Bản</h3>
+                <p>Cuốn sách giúp người mới bắt đầu làm quen với các khái niệm nền tảng trong
+                    Machine Learning, từ mô hình hồi quy đến thuật toán phân loại
+                </p>
+                <button>Tải xuống</button>
+            </article>
+            </li>
+            <!-- Dữ liệu -->
+            <li>
+            <article>
+                <h3>SQL cơ bản đến nâng cao</h3>
+                <p>Hướng dẫn từ A-Z cách sử dụng ngôn ngữ SQL để truy vấn và quản lý dữ liệu, thích
+                    hợp cho người học ngành dữ liệu hoặc phân tích.
+                </p>
+                <button>Tải xuống</button>
+            </article>
+            </li>
+            <!-- Bán hàng online -->
+             <li>
+             <article>
+                <h3>Kỹ năng bán hàng online hiệu quả</h3>
+                <p>Tổng hợp các chiến lược, kỹ năng viết content, chăm sóc khác hàng và xây dựng thương 
+                    hiệu để bán hàng online thành công.
+                </p>
+                <button>Tải xuống</button>
+            </article>
+            </li>
+              <!-- Tin học văn phòng -->
+             <li>
+            <article>
+                <h3>168 Phím Tắt Tin học Văn Phòng</h3>
+                <p>Tổng hợp các phím tắt hữu ích trong Word, Excel, PowerPoint giúp bạn thao tác nhanh, tăng hiệu suất công việc
+                </p>
+                <button>Tải xuống</button>
+            </article>
+            </li>
+          
+            <!-- Autocad -->
+             <li>
+             <article>
+                <h3>Giáo trình AutoCAD 2D-3D</h3>
+                <p> Tài liệu bài bản từ cơ bản đến nâng cao về phần mềm thiết kế kỹ thuật AutoCAD,
+                    hỗ trợ vẽ kỹ thuật chính xác từ 2D đến 3D.
+                </p>
+                <button>Tải xuống</button>
+            </article>
+            </li>
+            <!-- Phát triển kỹ năng -->
+             <li>
+            <article>
+                <h3>Thuyết trình tự tin trong 7 ngày</h3>
+                <p>Bí quyết và kỹ năng luyện tập giúp bạn nâng cao khả năng nói chuyện trước đám đông
+                    và truyền đạ ý tưởng mạch lạc
+                </p>
+                <button>Tải xuống</button>
+            </article>
+            </li>
+            <!-- Nấu ăn -->
+             <li>
+            <article>
+                <h3>Nấu ăn gia đình đơn giản và ngon</h3>
+                <p>Sách hướng dẫn nấu các món ăn quen thuộc, dễ làm, phù hợp với gia đình Việt, đặc biệt
+                    là người mới bắt đầu
+                </p>
+                <button>Tải xuống</button>
+            </article>
+            </li>
+              <!-- Handmade -->
+            <li>
+            <article>
+                <h3>Tự in sách giấy handmade từ ebook</h3>
+                <p> Hướng dẫn chi tiết cách in ấn, đóng gáy và làm sách thủ công phù hợp cho người yêu 
+                    sáng tạo, nghệ thuật 
+                </p>
+                <button>Tải xuống</button>
+            </article>
+            </li>
+            <!-- Thể dục -->
+            <li>
+            <article>
+                <h3>Yoga cơ bản tại nhà</h3>
+                <p> Chia sẻ các bài tập yoga đơn giản giúp thư giãn, cải thiện sức khỏe và giữ dáng, dễ áp dụng tại nhà
+                </p>
+                <button>Tải xuống</button>
+            </article>
+            </li>
+            <!-- Nhạc cụ -->
+            <li>
+            <article>
+                <h3>Học đàn Guitar cho người mới bắt đầu</h3>
+                <p>Cẩm nang học đàn guitar từ tư thế cầm đàn, các hợp âm cơ bản đến cách chơi những bài hát đầu tiên.
+                </p>
+                <button>Tải xuống</button>
+            </article>
+            </li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <section>
+            <h2>Học online cùng giảng viên</h2>
+            <p>Hotline: 39606565</p>
+            <p>Email: nguyenlekhaitrong0183@gmail.com</p>
+            <p>Làm việc lúc 8h - 17h, thứ 2 đến chủ nhật</p>
+        </section>
+        <nav aria-label="Về NLKT_e-learning">
+            <h3>Về NLKT_e-learning </h3>
+            <ul>
+                <li><a href="">Giới thiệu về NLKT_e-learning</a></li>
+                <li><a href="">Hướng dẫn sử dụng</a></li>
+                <li><a href="">Kích hoạt khóa học</a></li>
+                <li><a href="">Điều khoản dịch vụ</a></li>
+                <li><a href="">Chính sách bảo mật</a></li>
+            </ul>
+        </nav>
+         <section aria-label="Mạng xã hội và ngôn ngữ">
+        <a href="https://www.facebook.com/trong.nguyen.118810/"><img src="{{ url_for('static', filename='assets/Facebook.png') }}" alt="Facebook"></a>
+        <a href="https://www.youtube.com/@trongnguyen8562"><img src="{{url_for('static', filename='assets/Youtube.png') }}" alt="YouTube"></a>
+    </section>
+    </footer>
+</body>
+</html>

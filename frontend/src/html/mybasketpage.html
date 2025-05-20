@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - Đang phát triển</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mybasketpage.css') }}">
+</head>
+<body>
+    <header>
+        <p>NLKT e-learning</p>
+        <ul>
+            <li><a href="{{ url_for('homepage') }}">Home</a></li>
+            <li><a href="{{ url_for('coursepage')}}">Courses</a></li>
+            <li><a href="{{ url_for('dashboardpage')}}">Dashboard</a></li>
+            <li><a href="{{ url_for('loginpage')}}" >Login</a></li>
+        </ul>
+         <a href="{{ url_for('mybasketpage')}}">🛒</a>
+    </header>
+    <main>
+    <section class="container">
+        <h1>Trang giỏ hàng đang được phát triển</h1>
+        <p>Chúng tôi đang hoàn thiện trang này. Vui lòng quay lại sau!</p>
+        <div class="loader"></div>
+    </section>
+    </main>
+     <footer>
+        <section>
+            <h2>Học online cùng giảng viên</h2>
+            <p>Hotline: 39606565</p>
+            <p>Email: nguyenlekhaitrong0183@gmail.com</p>
+            <p>Làm việc lúc 8h - 17h, thứ 2 đến chủ nhật</p>
+        </section>
+        <nav aria-label="Về NLKT_e-learning">
+            <h3>Về NLKT e-learning </h3>
+            <ul>
+                <li><a href="">Giới thiệu về NLKT e-learning</a></li>
+                <li><a href="">Hướng dẫn sử dụng</a></li>
+                <li><a href="">Kích hoạt khóa học</a></li>
+                <li><a href="">Điều khoản dịch vụ</a></li>
+                <li><a href="">Chính sách bảo mật</a></li>
+            </ul>
+        </nav>
+         <section aria-label="Mạng xã hội và ngôn ngữ">
+        <a href="https://www.facebook.com/trong.nguyen.118810/"><img src="{{ url_for('static', filename='assets/Facebook.png') }}" alt="Facebook"></a>
+        <a href="https://www.youtube.com/@trongnguyen8562"><img src="{{url_for('static', filename='assets/Youtube.png') }}" alt="YouTube"></a>
+    </section>
+    </footer>
+</body>
+</html>

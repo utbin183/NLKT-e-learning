@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xem video</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/viewvideopage.css') }}">
+</head>
+<body>
+    <header>
+        <p>NLKT e-learning</p>
+        <ul>
+            <li><a href="{{ url_for('homepage') }}">Home</a></li>
+            <li><a href="{{ url_for('coursepage')}}">Courses</a></li>
+            <li><a href="{{ url_for('dashboardpage')}}">Dashboard</a></li>
+            <li><a href="{{ url_for('loginpage')}}" >Login</a></li>
+        </ul>
+         <a href="{{ url_for('mybasketpage')}}">🛒</a>
+    </header>
+    <main>
+    <h2>Video bài giảng:</h2>
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/{{ video_id }}"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+    </main>
+    <footer>
+        <section>
+            <h2>Học online cùng giảng viên</h2>
+            <p>Hotline: 39606565</p>
+            <p>Email: nguyenlekhaitrong0183@gmail.com</p>
+            <p>Thời gian làm việc: 8h - 17h, Thứ 2 đến Chủ nhật</p>
+        </section>
+
+        <nav aria-label="Thông tin thêm về trang web">
+            <h3>Về NLKT_e-learning</h3>
+            <ul>
+                <li><a href="#">Giới thiệu về NLKT_e-learning</a></li>
+                <li><a href="#">Hướng dẫn sử dụng</a></li>
+                <li><a href="#">Kích hoạt khóa học</a></li>
+                <li><a href="#">Điều khoản dịch vụ</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+            </ul>
+        </nav>
+
+        <section aria-label="Mạng xã hội">
+            <a href="https://www.facebook.com/trong.nguyen.118810/"><img src="{{ url_for('static', filename='assets/Facebook.png') }}" alt="Facebook"></a>
+            <a href="https://www.youtube.com/@trongnguyen8562"><img src="{{ url_for('static', filename='assets/Youtube.png') }}" alt="YouTube"></a>
+        </section>
+    </footer>
+</body>
+</html>

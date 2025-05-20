@@ -1,0 +1,260 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background-color: #004080;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    
+}
+header ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+
+}
+
+header a{
+    font-size: 40px;
+    font-weight: bold;
+}
+header ul li a:hover {
+    text-decoration: underline;
+}
+/* MAIN */
+main {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* COURSE INFO SECTION */
+main section[aria-label="Thông tin khóa học chi tiết"] {
+    flex: 1 1 60%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+main section[aria-label="Thông tin khóa học chi tiết"] h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #002c5f;
+}
+
+/* ARTICLE & HEADINGS */
+main section h1 {
+    margin-bottom: 1.5rem;
+}
+
+main section h2 {
+    margin-bottom: 0.5rem;
+    color: #004080;
+}
+main section h2 span{
+    color: #000000;
+}
+
+main section h2 ul {
+    padding-left: 1.5rem;
+    color: #004080
+}
+
+main section li {
+    margin-bottom: 1rem;
+    padding: 12px;
+    background-color: #f1f7ff;
+    border-left: 4px solid #0073e6;
+    border-radius: 8px;
+    list-style:none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main section ul li button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    right: 300;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main section ul li button:hover {
+    background-color: #218838;
+}
+/* ASIDE */
+main aside {
+    flex: 1 1 30%;
+    background-color: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+main aside figure {
+    width: 100%;
+    margin: 0;
+}
+
+main aside img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #000000;
+    font-size: 20px ;
+}
+
+main aside p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+main aside button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main aside button:hover {
+    background-color: #005bb5;
+}
+
+footer {
+    background-color: #002c5f;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+footer h2, footer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+footer p, footer li {
+    font-size: 0.95rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li a {
+    color: #cce6ff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    width: 30px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        padding: 0 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+section[aria-label] {
+    padding: 1rem 0;
+}
+
+article h3, section[aria-label] > p {
+    font-weight: 600;
+}
+
+article p:last-of-type {
+    font-weight: bold;
+    color: #e60000;
+}
+
+article s {
+    color: #888;
+}
+
+/* Cải thiện Accessibility */
+button:focus, a:focus {
+    outline: 2px dashed #0073e6;
+    outline-offset: 4px;
+}
